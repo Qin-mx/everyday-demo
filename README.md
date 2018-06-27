@@ -9,3 +9,8 @@
 
 #### [简单的复制功能](http://qin-mx.github.io/everyday-demo/实现复制功能)
  - 使用了execCommand("copy")的方法，具体参考(https://www.jb51.net/article/108667.htm)
+
+#### [3D选项卡](http://qin-mx.github.io/everyday-demo/3D选项卡)
+ - 主要用到了transform-style: preserve-3d
+ - 使用lable的for属性绑定input实现点击功能
+ - 通过改变角度，控制origin的控制点实现转动
