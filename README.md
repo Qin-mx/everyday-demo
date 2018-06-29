@@ -14,3 +14,10 @@
  - 主要用到了transform-style: preserve-3d
  - 使用lable的for属性绑定input实现点击功能
  - 通过改变角度，控制origin的控制点实现转动
+
+ #### [点赞特效](http://qin-mx.github.io/everyday-demo/点赞特效)
+ - 主要用到了transiton的steps功能实现的
+
+#### [按钮阴影](http://qin-mx.github.io/everyday-demo/按钮阴影)
+ - 通过box-shadow来控制阴影
+ - 使用到了css3的animation属性
