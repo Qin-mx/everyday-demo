@@ -21,3 +21,10 @@
 #### [按钮阴影](http://qin-mx.github.io/everyday-demo/按钮阴影)
  - 通过box-shadow来控制阴影
  - 使用到了css3的animation属性
+
+#### [将字符串转换成大写](http://qin-mx.github.io/everyday-demo/将字符串转换成大写)
+ - 将一段字符串的空格后的首字母大写
+ - 通过将字符转成数组，遍历数组将首字母大写
+ - 用到的属性
+    > charAt(),toUpperCase
+    > splice，split
