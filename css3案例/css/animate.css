@@ -1,0 +1,246 @@
+
+.screen-1__wrap-heading,
+.screen-1__phone,
+.screen-2__wrap-heading,
+
+.screen-2__wrap-subheading,
+.screen-3__wrap-heading,
+.screen-3__wrap-subheading,
+.screen-4__wrap-heading,
+.screen-4__wrap-subheading,
+.screen-5__wrap-heading,
+.screen-5__wrap-subheading
+{
+    transition: all 0.5s;
+}
+.screen-2__wrap-phone,
+.screen-3__wrap-phone{
+    transition: all 1s;
+}
+
+.screen-2__wrap-heading_animated_init,
+.screen-3__wrap-heading_animated_init,
+.screen-4__wrap-heading_animated_init,
+.screen-5__wrap-heading_animated_init{
+    opacity: 0;
+    transform: translate(0,-100%);
+
+}
+.screen-2__wrap-subheading_animated_init,
+.screen-3__wrap-subheading_animated_init,
+.screen-4__wrap-subheading_animated_init,
+.screen-5__wrap-subheading_animated_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+.screen-2__wrap-phone_animated_init,
+.screen-3__wrap-phone_animated_init,
+.screen-4-phone-item_1_animated_init,
+.screen-4-phone-item_2_animated_init,
+.screen-4-phone-item_3_animated_init,
+.screen-4-phone-item_4_animated_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+
+.screen-1__wrap-heading_animated_done,
+.screen-1__phone_animated_done,
+.screen-2__wrap-heading_animated_done,
+.screen-2__wrap-phone_animated_done,
+.screen-2__wrap-subheading_animated_done,
+.screen-3__wrap-heading_animated_done,
+.screen-3__wrap-phone_animated_done,
+.screen-3__wrap-subheading_animated_done
+.screen-4__wrap-heading_animated_done,
+.screen-4__wrap-subheading_animated_done,
+.screen-4-phone-item_1_animated_done,
+.screen-4-phone-item_2_animated_done,
+.screen-4-phone-item_3_animated_done,
+.screen-4-phone-item_4_animated_done,
+.screen-5__wrap-heading_animated_done,
+.screen-5__wrap-subheading_animated_done
+{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+/* 一楼 */
+.screen-1__shadow
+{
+    transition: all 0.5s;
+}
+.screen-1__wrap-heading_animated_init
+{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+
+.screen-1__shadow_animated_done{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.screen-1__phone_animated_init{
+    opacity: 0;
+    transform: translate(-50%,-100%)!important;
+}
+.screen-1__shadow_animated_init{
+    opacity: 0;
+    transform: translate(-50%,50%)!important
+}
+
+/* 二楼 */
+
+.screen-2_point{
+    transition: all 0.5s 1s;
+}
+.screen-2_point2::after,.screen-2_point3::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    border-radius: 50%;
+    animation: bounde 0.5s infinite;
+}
+.screen-2_point2::before,.screen-2_point3::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: red;
+    opacity: 0.6;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    border-radius: 50%;
+    animation: bounde 0.5s infinite;
+}
+
+.screen-2_point1::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    border-radius: 50%;
+    animation: bounde 0.5s infinite;
+}
+.screen-2_point1::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: red;
+    opacity: 0.6;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    border-radius: 50%;
+    animation: bounde 0.5s infinite;
+}
+
+.screen-2_point1_animated_init
+{
+    opacity: 0;
+    transform: translate(-100%,0);
+}
+.screen-2_point1_animated_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.screen-2_point2_animated_init,
+.screen-2_point3_animated_init
+{
+    opacity: 0;
+    transform: translate(100%,0);
+}
+.screen-2_point2_animated_done,
+.screen-2_point3_animated_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+@keyframes bounde{
+    0%,100%{
+        transform: scale(0)
+    }
+    50%{
+        transform: scale(1)
+    }
+}
+
+
+/* 三楼 */
+.screen-3__wrap__features{
+    transition: all 0.5s 1s;
+}
+.screen-3__wrap__features_animated_done{
+    transform: scale(1);
+    opacity: 1;
+}
+.screen-3__wrap__features_animated_init{
+    transform: scale(0);
+    opacity: 0;
+}
+.screen-3__wrap__features div{
+    transition: all 0.5s linear;
+}
+.screen-3__wrap__features div:hover{
+    transform: scale(1.1);
+}
+.screen-3__wrap__features div span{
+    animation: roak 1s 0.8s infinite;
+}
+@keyframes roak{
+ 
+}
+
+/* 四楼 */
+.screen-4-phone-item{
+    transition: all 1s;
+}
+.screen-4-phone-item_1{
+    transition-delay: 0.1s;
+}
+.screen-4-phone-item_2{
+    transition-delay: 0.3s;
+}
+.screen-4-phone-item_3{
+    transition-delay: 0.5s;
+}
+.screen-4-phone-item_4{
+    transition-delay: 0.7s;
+}
+/* 5楼 */
+.screen-5__back{
+    transition: all 1s;
+}
+.screen-5__back_animated_done{
+    transform: translate(0,0) scale(1.2);
+    opacity: 1;
+}
+.screen-5__back_animated_init{
+    transform: translate(0,100%);
+    opacity: 0;
+}
+
+/* 导航条样式 */
+.header{
+    transition: all 1s;
+    background: #ffff;
+}
+.header_fixed{
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}

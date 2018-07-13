@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/*
+    BEM设计模式
+
+    模块 （没有前缀，多个单次使用 - 链接）
+    元素 （元素在模块之后，可以有多个层级，以 __ 链接）
+    修饰 （某个元素、或者某模块特别的状态，必须有一个状态名和状态值，使用_链接）
+*/
+.box {
+  overflow: hidden;
+}
+
+.screen-1 .screen-1__phone, .screen-1 .screen-1__shadow, .screen-6 .screen-6__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screen-1 .screen-1__wrap, .screen-2 .screen-2__wrap, .screen-3 .screen-3__wrap, .screen-4 .screen-4__wrap, .screen-5 .screen-5__wrap {
+  max-width: 1200px;
+  min-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  height: 80px;
+}
+
+.header__wrap {
+  max-width: 1200px;
+  min-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__logo {
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 20px;
+  color: #07111b;
+  text-indent: 50px;
+  background: url(../image/logo.png) no-repeat left center;
+  background-size: 38px 38px;
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+
+.header__nav {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+}
+
+.header__nav .header__nav-item {
+  line-height: 38px;
+  font-size: 14px;
+  color: #333333;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.header__nav .header__nav-item:nth-child(1):hover {
+  color: red;
+}
+
+.header__nav .header__nav-item:nth-child(1):hover ~ .header__nav-item-line {
+  left: 20px;
+}
+
+.header__nav .header__nav-item:nth-child(2):hover {
+  color: red;
+}
+
+.header__nav .header__nav-item:nth-child(2):hover ~ .header__nav-item-line {
+  left: 98px;
+}
+
+.header__nav .header__nav-item:nth-child(3):hover {
+  color: red;
+}
+
+.header__nav .header__nav-item:nth-child(3):hover ~ .header__nav-item-line {
+  left: 171px;
+}
+
+.header__nav .header__nav-item:nth-child(4):hover {
+  color: red;
+}
+
+.header__nav .header__nav-item:nth-child(4):hover ~ .header__nav-item-line {
+  left: 259px;
+}
+
+.header__nav .header__nav-item:nth-child(5):hover {
+  color: red;
+}
+
+.header__nav .header__nav-item:nth-child(5):hover ~ .header__nav-item-line {
+  left: 315px;
+}
+
+.header__nav .header__nav-item_button {
+  background: #000;
+  color: #f4f4f5;
+  padding: 0px 40px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.header__nav .header__nav-item_active {
+  color: red;
+}
+
+.header__nav .header__nav-item-line {
+  height: 2px;
+  width: 60px;
+  background: red;
+  position: absolute;
+  left: 20px;
+  transition: left 0.5s;
+}
+
+section {
+  height: 800px;
+  position: relative;
+}
+
+.screen-1 {
+  width: 100%;
+  background: #ececec;
+  color: #fff;
+  position: relative;
+}
+
+.screen-1 .screen-1__wrap .screen-1__wrap-heading {
+  width: 100%;
+  position: absolute;
+  top: 160px;
+  text-align: center;
+  font-size: 42px;
+}
+
+.screen-1 .screen-1__wrap .screen-1__wrap-heading b {
+  color: red;
+  font-weight: 400;
+}
+
+.screen-1 .screen-1__phone {
+  width: 1375px;
+  height: 305px;
+  background: url(../image/screen-1-phone.png) no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -36%);
+  z-index: 1;
+}
+
+.screen-1 .screen-1__shadow {
+  width: 1233px;
+  height: 411px;
+  background: url(../image/screen-1-shadow.png) no-repeat;
+  transform: translate(-50%, -20%);
+}
+
+.screen-2 {
+  background: #fafafa;
+  text-align: center;
+}
+
+.screen-2 .screen-2__wrap {
+  color: #07111b;
+}
+
+.screen-2 .screen-2__wrap .screen-2__wrap-heading {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  font-size: 42px;
+  color: red;
+}
+
+.screen-2 .screen-2__wrap .screen-2__wrap-subheading {
+  width: 100%;
+  line-height: 22px;
+  position: absolute;
+  top: 190px;
+}
+
+.screen-2 .screen-2__wrap .screen-2__wrap-phone {
+  background: url(../image/bg-screen-2.png) no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 873px;
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.screen-2 .screen-2__wrap .screen-2_point {
+  width: 212px;
+  position: absolute;
+  font-size: 24px;
+  color: #4D555d;
+}
+
+.screen-2 .screen-2__wrap .screen-2_point:nth-child(1) {
+  left: -120px;
+  top: 180px;
+  background: url(../image/icon-point-right.png) no-repeat right;
+  padding-right: 112px;
+}
+
+.screen-2 .screen-2__wrap .screen-2_point:nth-child(2) {
+  top: 37px;
+  left: 584px;
+  background: url(../image/icon-point-left.png) no-repeat left;
+  padding-left: 112px;
+}
+
+.screen-2 .screen-2__wrap .screen-2_point:nth-child(3) {
+  top: 340px;
+  left: 680px;
+  padding-left: 112px;
+  background: url(../image/icon-point-left.png) no-repeat left;
+}
+
+.screen-3 {
+  background: #a71316;
+  text-align: center;
+}
+
+.screen-3 .screen-3__wrap {
+  color: #fff;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap-heading {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  font-size: 42px;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap-subheading {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  text-align: left;
+  line-height: 22px;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap-phone {
+  width: 729px;
+  height: 900px;
+  background: url(../image/bg-screen-3.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 200px;
+  left: 465px;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap__features {
+  position: absolute;
+  width: 328px;
+  height: 288px;
+  bottom: 140px;
+  left: 5px;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap__features div {
+  float: left;
+  width: 140px;
+  height: 120px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin: 0 24px 24px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.screen-3 .screen-3__wrap .screen-3__wrap__features div span {
+  display: block;
+  font-size: 36px;
+  height: 36px;
+  line-height: 36px;
+  padding: 32px 0 6px;
+}
+
+.screen-4 {
+  background: #fff;
+}
+
+.screen-4 .screen-4__wrap {
+  text-align: center;
+}
+
+.screen-4 .screen-4__wrap .screen-4__wrap-heading {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  font-size: 42px;
+  color: red;
+}
+
+.screen-4 .screen-4__wrap .screen-4__wrap-subheading {
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  line-height: 22px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone {
+  position: absolute;
+  top: 320px;
+  width: 1300px;
+  margin-left: 30px;
+  height: 270px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div {
+  float: left;
+  width: 220px;
+  height: 270px;
+  margin-right: 90px;
+  position: relative;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(1) {
+  background: url(../image/phone-1.png) no-repeat left center;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(1) span {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(1) span:nth-child(1) {
+  top: 300px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(1) span:nth-child(2) {
+  top: 328px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(2) {
+  background: url(../image/phone-2.png) no-repeat left center;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(2) span {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(2) span:nth-child(1) {
+  top: 300px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(2) span:nth-child(2) {
+  top: 328px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(3) {
+  background: url(../image/phone-3.png) no-repeat left center;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(3) span {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(3) span:nth-child(1) {
+  top: 300px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(3) span:nth-child(2) {
+  top: 328px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(4) {
+  background: url(../image/phone-4.png) no-repeat left center;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(4) span {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(4) span:nth-child(1) {
+  top: 300px;
+}
+
+.screen-4 .screen-4__wrap .screen-4_wrap-phone div:nth-child(4) span:nth-child(2) {
+  top: 328px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.screen-5 {
+  background: #d9dde1;
+  text-align: center;
+}
+
+.screen-5 .screen-5__wrap {
+  color: #07111b;
+}
+
+.screen-5 .screen-5__wrap .screen-5__wrap-heading {
+  width: 100%;
+  position: absolute;
+  top: 160px;
+  font-size: 42px;
+  color: red;
+}
+
+.screen-5 .screen-5__wrap .screen-5__wrap-subheading {
+  width: 100%;
+  line-height: 22px;
+  position: absolute;
+  top: 260px;
+}
+
+.screen-5 .screen-5__back {
+  width: 100%;
+  height: 370px;
+  background: url(../image/bg-screen-5.png) no-repeat bottom center;
+  position: absolute;
+  background-size: cover;
+  bottom: -100px;
+}
+
+.screen-6 {
+  height: 212px;
+  background: url(../image/bg-screen-buy.png) no-repeat center;
+  background-size: cover;
+}
+
+.screen-6 .screen-6__btn {
+  border: 0;
+  background: #f01414;
+  color: #ffffff;
+  text-align: center;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 24px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.screen-6 .screen-6__btn:hover {
+  margin-top: -10px;
+  box-shadow: 0px 10px 20px black;
+}
+
+.footer-copy {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #07111b;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+}
