@@ -32,6 +32,6 @@
 #### [css3案例]](http://qin-mx.github.io/everyday-demo/css3案例)
  - mukewang视频学习
 
-### 九宫格抽奖 (http://qin-mx.github.io/everyday-demo/九宫格轮盘)
+#### 九宫格抽奖 (http://qin-mx.github.io/everyday-demo/九宫格轮盘)
  - 学习地址(http://www.dowebok.com/491.html)
  - 布局参考qq浏览器的抽奖活动
