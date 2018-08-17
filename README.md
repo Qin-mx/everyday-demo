@@ -15,7 +15,7 @@
  - 使用lable的for属性绑定input实现点击功能
  - 通过改变角度，控制origin的控制点实现转动
 
- #### [点赞特效](http://qin-mx.github.io/everyday-demo/点赞特效)
+#### [点赞特效](http://qin-mx.github.io/everyday-demo/点赞特效)
  - 主要用到了transiton的steps功能实现的
 
 #### [按钮阴影](http://qin-mx.github.io/everyday-demo/按钮阴影)
@@ -32,7 +32,6 @@
 #### [css3案例]](http://qin-mx.github.io/everyday-demo/css3案例)
  - mukewang视频学习
 
-### 九宫格抽奖
+### 九宫格抽奖 (http://qin-mx.github.io/everyday-demo/九宫格轮盘)
  - 学习地址(http://www.dowebok.com/491.html)
  - 布局参考qq浏览器的抽奖活动
- 
